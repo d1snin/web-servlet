@@ -1,0 +1,8 @@
+# maven things
+targer/
+out/
+
+# idea
+.idea/
+# Project exclude paths
+/target/
