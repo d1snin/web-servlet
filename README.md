@@ -12,7 +12,7 @@ docker build . -t tomcat # - building docker image.
 docker run -d --rm --name tomcat -p 8080:8080 tomcat # - running container using built image.
 ```
 
-*Stopping container:*
+*Killing container:*
 
 ```shell
 docker kill tomcat
