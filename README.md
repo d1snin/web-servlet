@@ -8,8 +8,8 @@
 
 ```shell
 mvn war:war # - building our project.
-docker build . # - building docker image.
-docker run -d --rm --name tomcat -p 8080:8080 <Image> # - running container using built image.
+docker build . -t tomcat # - building docker image.
+docker run -d --rm --name tomcat -p 8080:8080 tomcat # - running container using built image.
 ```
 
 *Stopping container:*
