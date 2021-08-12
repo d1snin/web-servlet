@@ -1,4 +1,4 @@
-package xyz.d1snin.webservlet.webservlet.model;
+package xyz.d1snin.webservlet.model;
 
 import lombok.Data;
 
