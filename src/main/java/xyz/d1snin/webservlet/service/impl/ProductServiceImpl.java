@@ -3,7 +3,7 @@ package xyz.d1snin.webservlet.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import xyz.d1snin.webservlet.model.Product;
-import xyz.d1snin.webservlet.repository.impl.ProductRepositoryImpl;
+import xyz.d1snin.webservlet.repository.ProductRepository;
 import xyz.d1snin.webservlet.service.ProductService;
 
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public class ProductServiceImpl implements ProductService {
 
-  private ProductRepositoryImpl products;
+  private ProductRepository products;
 
   @Override
   public void addProduct(String title, double cost) {
@@ -29,7 +29,7 @@ public class ProductServiceImpl implements ProductService {
   }
 
   @Autowired
-  private void setProducts(ProductRepositoryImpl products) {
+  private void setProducts(ProductRepository products) {
     this.products = products;
   }
 }
